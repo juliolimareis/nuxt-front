@@ -19,14 +19,9 @@ export default defineNuxtConfig({
     },
   },
 
-  postcss: { plugins: { tailwindcss: "./tailwind.config.js" } },
-  css: [
-    "~/assets/css/main.css",
+  modules:[
+    "@nuxtjs/tailwindcss",
+    // "@nuxtjs/abifa-ui"
   ],
 
-  components: [
-    { path: "~/components", extensions: ["vue"] },
-    { path: "~/components/icons", extensions: ["vue"] },
-    { path: "node_modules/components", extensions: ["vue"] },
-  ],
 });

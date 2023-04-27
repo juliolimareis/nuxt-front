@@ -6,6 +6,9 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
+    "./node_modules/@abifa-ui/components/**/*.{js,vue,ts}",
+    "./@abifa-ui/components/**/*.{js,vue,ts}",
+    "./app.vue"
   ],
   theme: {
     extend: {
