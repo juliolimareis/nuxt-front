@@ -21,7 +21,7 @@
           <Button>
             Primary
           </Button>
-          <Button>
+          <Button has-icon>
             Primary Icon
             <AcademicCapIcon class="h-5 w-5"/>
           </Button>
@@ -138,7 +138,6 @@ import { BeakerIcon, CursorArrowRaysIcon, PencilSquareIcon, ArrowPathIcon, Acade
 const route = useRoute();
 const router = useRouter();
 const api = useApi();
-const { $api } = useNuxtApp();
 
 type Options = "buttons" | "inputs" | "loader" | "text" | "modal" | "icons" | "table";
 
@@ -152,7 +151,7 @@ const isOpenDialog = ref(false);
 const switchText = ref<"Off" | "On">("Off");
 
 onMounted(() => {
-  api.get("/user")
+  api.get("/music")
     .then(res => {
       console.log(res.data);
     });
