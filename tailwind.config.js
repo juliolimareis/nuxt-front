@@ -10,6 +10,7 @@ module.exports = {
     "./@abifa-ui/components/**/*.{js,vue,ts}",
     "./app.vue"
   ],
+  // important: true,
   theme: {
     extend: {
       colors: {

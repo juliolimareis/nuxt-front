@@ -1,5 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: "Openlingo",
+      script: [
+        { hid: "stripe", src: "https://www.youtube.com/iframe_api", defer: true }
+      ]
+    },
+  },
+
   imports: {
     dirs: [
       // Scan top-level modules
