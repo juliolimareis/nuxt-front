@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      publicPages: ["", "/", "/login", "/register"],
       api: process.env.API_MAIN,
       apiAddress: process.env.API_ADDRESS,
       apiAuthentication: process.env.API_AUTHENTICATION,

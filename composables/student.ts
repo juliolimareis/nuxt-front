@@ -1,4 +1,4 @@
-const useStudent = () => {
+export const useStudent = () => {
   const api = useApi();
 
   function fetchAll(){
